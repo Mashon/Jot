@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Jots</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @jots.each do |jot| %>
+      <tr>
+        <td><%= link_to 'Show', jot %></td>
+        <td><%= link_to 'Edit', edit_jot_path(jot) %></td>
+        <td><%= link_to 'Destroy', jot, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Jot', new_jot_path %>
