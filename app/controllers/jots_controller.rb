@@ -3,6 +3,9 @@ class JotsController < ApplicationController
 
   # GET /jots
   # GET /jots.json
+  def homepage
+  end
+
   def index
     @jots = Jot.all
   end
