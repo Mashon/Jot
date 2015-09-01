@@ -8,6 +8,12 @@ Bundler.require(*Rails.groups)
 
 module JotApp
   class Application < Rails::Application
+
+    #Added by me so that the lib folder will be read because my UrlHelper module
+    # is located in lib
+    # http://www.benfranklinlabs.com/where-to-put-rails-modules/
+
+
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
