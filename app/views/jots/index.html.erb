@@ -12,6 +12,8 @@
   <tbody>
     <% @jots.each do |jot| %>
       <tr>
+        <td><%= jot.title %></td>
+        <td><%= jot.body %></td>
         <td><%= link_to 'Show', jot %></td>
         <td><%= link_to 'Edit', edit_jot_path(jot) %></td>
         <td><%= link_to 'Destroy', jot, method: :delete, data: { confirm: 'Are you sure?' } %></td>
