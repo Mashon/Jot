@@ -72,6 +72,6 @@ class JotsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def jot_params
-      params[:jot]
+      params.require(:jot).permit(:title, :body)
     end
 end
