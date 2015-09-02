@@ -7,6 +7,7 @@ class JotsController < ApplicationController
   end
 
   def landing
+    redirect_to 'jots/landing'
   end
 
   def index
