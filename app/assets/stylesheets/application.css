@@ -71,3 +71,9 @@
     max-width: 10rem;
     min-height: 10rem;
   }
+.int_show {
+  padding: 4rem;
+  border: 2px solid black;
+  max-width: 30rem;
+  margin-top: 2rem;
+}

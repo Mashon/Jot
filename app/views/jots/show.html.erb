@@ -1,23 +1,23 @@
 <div class="container">
-
+<div class="int_show">
 <p id="notice"><%= notice %></p>
 
-<p>
+<div>
   <strong>Title:</strong>
   <%= @jot.title %>
-</p>
+</div>
+<br>
+<div>
 
-<p>
-  <strong>Jot:</strong>
   <%= @jot.body %>
-</p>
-
-<p>
+</div>
+<br>
+<div>
   <strong>Tags:</strong>
   <%= raw @jot.tag_list.map { |t| link_to t, tag_path(t) }.join(', ') %>
-
-</p>
-
+</div>
+<br>
 <%= link_to 'Edit', edit_jot_path(@jot) %> |
 <%= link_to 'Back', jots_path %>
+</div>
 </div>
