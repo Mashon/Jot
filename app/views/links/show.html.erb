@@ -11,8 +11,9 @@
 </p>
 
 <p>
-  <strong>Tag:</strong>
-  <%= raw @link.tags %>
+  <strong>Tags:</strong>
+  <%= raw @link.tag_list.map { |t| link_to t, tag_path(t) }.join(', ') %>
+
 </p>
 
 <%= link_to 'Edit', edit_link_path(@link) %> |
