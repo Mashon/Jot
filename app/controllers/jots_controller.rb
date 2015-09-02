@@ -6,6 +6,9 @@ class JotsController < ApplicationController
   def homepage
   end
 
+  def landing
+  end
+
   def index
     @jots = Jot.all
   end
