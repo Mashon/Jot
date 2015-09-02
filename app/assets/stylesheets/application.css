@@ -14,6 +14,8 @@
  *= require_self
  */
 
+
+
 .container {
   display: flex;
   justify-content: center;
@@ -51,3 +53,21 @@
   background: #fc3cd6;
   text-decoration: none;
 }
+
+.form {
+  border: 2px solid black;
+  max-width: 25rem;
+  margin: auto;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  padding-left: 3rem;
+  justify-content: flex-start;
+
+  }
+
+
+  #text_area {
+    min-width: 20rem;
+    max-width: 10rem;
+    min-height: 10rem;
+  }
