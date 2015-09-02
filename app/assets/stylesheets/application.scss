@@ -27,6 +27,12 @@
   margin: 2rem;
 }
 
+.container_left {
+  display: flex;
+  justify-content: left;
+  margin: 2rem;
+}
+
 .site_index {
   border: 1px solid black;
   text-align: center;
@@ -70,7 +76,7 @@
 
   }
 
-
+// sets the size for the body of the jots new form
   #text_area {
     min-width: 30rem;
     min-height: 10rem;
@@ -84,7 +90,8 @@
   margin: 2rem auto;
 }
 
-.n {
+// sets the styling for the box on the jots new view
+.jot_nw {
   padding: 4rem;
   border: 2px solid green;
   min-width: 25rem;
@@ -92,4 +99,13 @@
   margin: 2rem auto;
   z-index: 1;
 
+}
+
+
+.each_jot_index {
+  border: 2px dashed red;
+}
+
+.jot_index_view {
+  text-align: left;
 }

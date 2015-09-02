@@ -1,32 +1,33 @@
-<div class="container">
-
+<div class="container_left">
+<div class="jot_index_view">
 <p id="notice"><%= notice %></p>
 
-<h1>Listing Jots</h1>
+<h1>My Jots</h1>
+<p>What's on your mind? Jot it down!</p>
+<div class="border">
+<% @jots.each do |jot| %>
 
-<table>
-  <thead>
-    <tr>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
+        <div class="each_jot_index">
+          <h3>Title: <%= jot.title %></h3>
+          <%= jot.body %><br><br>
+          Tags: <%= raw jot.tag_list.map { |t| link_to t, tag_path(t) }.join(', ') %><br>
+          <%= link_to 'Show', jot %>
+          <%= link_to 'Edit', edit_jot_path(jot) %>
+          <%= link_to 'Destroy', jot, method: :delete, data: { confirm: 'Are you sure?' } %>
+            <br>
+            </div>
+            <br>
+            <br>
+          <% end %>
 
-  <tbody>
-    <% @jots.each do |jot| %>
-      <tr>
-        <td><%= jot.title %></td>
-        <td><%= jot.body %></td>
-        <td>Tags:<%= raw jot.tag_list.map { |t| link_to t, tag_path(t) }.join(', ') %>
-        <td><%= link_to 'Show', jot %></td>
-        <td><%= link_to 'Edit', edit_jot_path(jot) %></td>
-        <td><%= link_to 'Destroy', jot, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
+        </div>
+        <br>
 
-<br>
+
 
 <%= link_to 'New Jot', new_jot_path %>
+<br>
+<br>
 <%= link_to 'Back', sites_path %>
+</div>
 </div>
