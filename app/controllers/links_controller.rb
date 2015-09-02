@@ -3,6 +3,9 @@ class LinksController < ApplicationController
 
   # GET /links
   # GET /links.json
+  def tags
+  end
+
   def index
     @links = Link.all
   end
@@ -69,6 +72,6 @@ class LinksController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def link_params
-      params.require(:link).permit(:title, :url)
+      params.require(:link).permit(:title, :url, :tag_list)
     end
 end
