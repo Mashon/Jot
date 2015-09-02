@@ -1,6 +1,13 @@
-<h1>Site Index</h1>
-
-<%= link_to 'New Link', new_link_path %>
-<%= link_to 'New Jot', new_jot_path %>
-<%= link_to 'All Links', links_path %>
-<%= link_to 'All Jots', jots_path %>
+<div class="container">
+  <div class="site_index">
+    <h3>Do Something!</h3>
+    <div class="top_row_buttons">
+      <%= link_to 'New Jot', new_jot_path, class:"btn_l" %>
+      <%= link_to 'New Link', new_link_path, class:"btn_l" %>
+    </div>
+    <div class="bottom_row_buttons">
+      <%= link_to 'All Jots', jots_path, class:"btn_l" %>
+      <%= link_to 'All Links', links_path, class:"btn_l" %>
+    </div>
+  </div>
+</div>

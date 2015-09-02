@@ -16,4 +16,38 @@
 
 .container {
   display: flex;
+  justify-content: center;
+}
+
+
+.site_index {
+  border: 1px solid black;
+  text-align: center;
+}
+
+.top_row_buttons {
+  padding:1em;
+}
+
+.bottom_row_buttons {
+  padding:3em;
+}
+
+/*4 buttons on the landing page*/
+.btn_l {
+  -webkit-border-radius: 6;
+  -moz-border-radius: 6;
+  border-radius: 6px;
+  text-shadow: 2px 1px 2px #614f61;
+  font-family: Georgia;
+  color: #ffffff;
+  font-size: 25px;
+  background: #34d968;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #fc3cd6;
+  text-decoration: none;
 }
