@@ -11,7 +11,11 @@ class JotsController < ApplicationController
   end
 
   def index
-    @jots = Jot.all
+    if params[:tag]
+      @jots = Jot.tagged_with(params[:tag])
+    else
+      @jots = Jot.all
+    end
   end
 
   # GET /jots/1

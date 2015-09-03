@@ -4,5 +4,6 @@ Rails.application.routes.draw do
   devise_for :users
   resources :jots
     root 'sites#homepage'
-    get 'tags/:tag', to: 'links#index', as: :tag
+    get 'tags/:tag', to: 'jots#index', as: :tag
+
 end

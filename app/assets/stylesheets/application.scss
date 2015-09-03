@@ -101,11 +101,37 @@
 
 }
 
-
+// sets the box styling around the jots individual divs in
+// the index view
 .each_jot_index {
   border: 2px dashed red;
 }
 
+// sets the styling for the jots index page
 .jot_index_view {
+  text-align: left;
+}
+
+
+// sets the styling for the box on the links new view
+.link_nw {
+  padding: 4rem;
+  border: 2px solid green;
+  min-width: 25rem;
+  max-width: 30rem;
+  margin: 2rem auto;
+  z-index: 1;
+
+}
+
+
+// sets the box styling around the links individual divs in
+// the index view
+.each_link_index {
+  border: 2px dashed blue;
+}
+
+// sets the styling for the links index page
+.link_index_view {
   text-align: left;
 }
