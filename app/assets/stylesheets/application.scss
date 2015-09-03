@@ -16,8 +16,7 @@
 
 @import 'normalize';
 
-
-
+$blue: #589BFF;
 
 
 
@@ -92,19 +91,28 @@
 
 // sets the styling for the box on the jots new view
 .jot_nw {
+  border-radius: 5px;
+  border: 1px solid black;
   padding: 4rem;
-  border: 2px solid green;
   min-width: 25rem;
   max-width: 30rem;
   margin: 2rem auto;
   z-index: 1;
+  -webkit-box-shadow: -4px 3px 5px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: -4px 3px 5px 0px rgba(0,0,0,0.75);
+  box-shadow: -4px 3px 5px 0px rgba(0,0,0,0.75);
 
 }
 
 // sets the box styling around the jots individual divs in
 // the index view
 .each_jot_index {
-  border: 2px dashed red;
+  border-radius: 5px;
+  border: 1px solid black;
+  -webkit-box-shadow: -4px 3px 5px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: -4px 3px 5px 0px rgba(0,0,0,0.75);
+  box-shadow: -4px 3px 5px 0px rgba(0,0,0,0.75);
+  padding: 0.5rem;
 }
 
 // sets the styling for the jots index page
@@ -115,12 +123,16 @@
 
 // sets the styling for the box on the links new view
 .link_nw {
+  border-radius: 5px;
+  border: 1px solid black;
   padding: 4rem;
-  border: 2px solid green;
   min-width: 25rem;
   max-width: 30rem;
   margin: 2rem auto;
   z-index: 1;
+  -webkit-box-shadow: -4px 3px 5px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: -4px 3px 5px 0px rgba(0,0,0,0.75);
+  box-shadow: -4px 3px 5px 0px rgba(0,0,0,0.75);
 
 }
 
@@ -128,10 +140,23 @@
 // sets the box styling around the links individual divs in
 // the index view
 .each_link_index {
-  border: 2px dashed blue;
+  border: 1px solid black;
+  padding: 1rem;
+  -webkit-box-shadow: -4px 3px 5px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: -4px 3px 5px 0px rgba(0,0,0,0.75);
+  box-shadow: -4px 3px 5px 0px rgba(0,0,0,0.75);
 }
 
 // sets the styling for the links index page
 .link_index_view {
   text-align: left;
+}
+
+
+
+.link_show {
+border: 2px solid red;
+min-width: 30rem;
+padding: 1rem;
+
 }

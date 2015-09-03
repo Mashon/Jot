@@ -4,6 +4,9 @@
 
     <h1>My Jots</h1>
     <p>What's on your mind? Jot it down!</p>
+    <%= link_to 'New Jot', new_jot_path %>
+    <br>
+    <br>
     <div class="border">
       <% @jots.each do |jot| %>
 
@@ -24,8 +27,6 @@
 
     </div>
     <br>
-
-    <%= link_to 'New Jot', new_jot_path %>
     <br>
     <br>
     <%= link_to 'Back', sites_path %>

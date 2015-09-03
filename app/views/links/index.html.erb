@@ -2,15 +2,17 @@
   <div class="link_index_view">
     <p id="notice"><%= notice %></p>
 
-    <h1>Listing Links</h1>
+    <h1>All your links!</h1>
     <p>Found a great site? Link to it!</p>
+    <%= link_to 'New Link', new_link_path %>
+    <br>
+    <br>
     <div class="border">
       <% @links.each do |link| %>
 
       <div class="each_link_index">
-        <h3><%= link.title %></h3>
-        <%= link_to link.url,link.url %><br><br>
-        Tags:<%= raw link.tag_list.map { |t| link_to t, tag_path(t) }.join(', ') %><br>
+        <h3><%= link.title %>: <%= link_to link.url,link.url %></h3>
+        <p>Tags:<%= raw link.tag_list.map { |t| link_to t, tag_path(t) }.join(', ') %></p>
         <%= link_to 'Show', link %>
         <%= link_to 'Edit', edit_link_path(link) %>
         <%= link_to 'Destroy', link, method: :delete, data: { confirm: 'Are you sure?' } %>
@@ -23,7 +25,7 @@
     </div>
     <br>
 
-    <%= link_to 'New Link', new_link_path %>
+
     <br>
     <br>
     <%= link_to 'Back', sites_path %>
