@@ -83,10 +83,16 @@ $blue: #589BFF;
   }
 
 .int_show {
+  border-radius: 5px;
+  border: 1px solid black;
   padding: 4rem;
-  border: 2px solid red;
+  min-width: 25rem;
   max-width: 30rem;
   margin: 2rem auto;
+  z-index: 1;
+  -webkit-box-shadow: -4px 3px 5px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: -4px 3px 5px 0px rgba(0,0,0,0.75);
+  box-shadow: -4px 3px 5px 0px rgba(0,0,0,0.75);
 }
 
 // sets the styling for the box on the jots new view
@@ -141,7 +147,7 @@ $blue: #589BFF;
 // the index view
 .each_link_index {
   border: 1px solid black;
-  padding: 1rem;
+  padding: 0.5rem;
   -webkit-box-shadow: -4px 3px 5px 0px rgba(0,0,0,0.75);
   -moz-box-shadow: -4px 3px 5px 0px rgba(0,0,0,0.75);
   box-shadow: -4px 3px 5px 0px rgba(0,0,0,0.75);
