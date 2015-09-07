@@ -84,6 +84,9 @@ $blue: #589BFF;
     min-width: 30rem;
     min-height: 10rem;
     margin-right: 2rem;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    text-align: start;
   }
 
 .int_show {
